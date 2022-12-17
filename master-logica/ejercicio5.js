@@ -8,7 +8,10 @@
  */
 
 function porcentaje(porcentaje, numero){
-    return (numero*porcentaje)/100
+    //return (numero*porcentaje)/100
+    let operacion = (numero * (porcentaje/100));
+    let resultado = `El ${porcentaje}% de ${numero} es ${operacion}`;
+    return resultado;
 }
 
-console.log(porcentaje(10,100))
+console.log(porcentaje(10,100));
